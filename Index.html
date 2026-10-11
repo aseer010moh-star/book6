@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سلسلة الأمين في الفيزياء 2027 - حل مسائل الدرس السادس</title>
+    <style>
+        body {
+            background-color: #0b1315;
+            color: #e2e8f0;
+            font-family: Tahoma, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .series-title {
+            color: #4fd1c5;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+        h2 { 
+            color: #d4af37; 
+            margin-top: 0;
+            margin-bottom: 20px; 
+            font-size: 20px;
+        }
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            background: #111d22;
+            border: 2px solid #d4af37;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.25);
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+        .tab-btn {
+            background: #18262c;
+            color: #a0aec0;
+            border: 1px solid #2d3748;
+            padding: 10px 14px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .tab-btn:hover {
+            border-color: #4fd1c5;
+            color: #4fd1c5;
+        }
+        .tab-btn.active {
+            background: #d4af37;
+            color: #0b1315;
+            border-color: #d4af37;
+            box-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+        }
+        .tab-content {
+            display: none;
+            text-align: right;
+            animation: fadeIn 0.4s ease-in-out;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .problem-box {
+            background: #18262c;
+            border: 1px solid #23353e;
+            border-radius: 10px;
+            padding: 22px;
+            margin-bottom: 20px;
+        }
+        .problem-title {
+            color: #d4af37;
+            font-size: 17px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            border-right: 4px solid #d4af37;
+            padding-right: 12px;
+        }
+        .problem-statement {
+            font-size: 16px;
+            color: #e2e8f0;
+            line-height: 1.9;
+        }
+        .solution-box {
+            background: #060a0c;
+            border: 1px solid #23353e;
+            border-radius: 10px;
+            padding: 22px;
+        }
+        .solution-title {
+            color: #4fd1c5;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #23353e;
+            padding-bottom: 8px;
+        }
+        .step {
+            margin-bottom: 12px;
+            font-size: 15px;
+            line-height: 1.8;
+            color: #cbd5e0;
+        }
+        .final-answer {
+            margin-top: 20px;
+            background: rgba(104, 211, 145, 0.1);
+            border: 1px solid #68d391;
+            color: #68d391;
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: bold;
+            text-align: center;
+            font-size: 17px;
+            letter-spacing: 0.5px;
+        }
+        .footer-rights {
+            margin-top: 30px;
+            font-size: 13px;
+            color: #8892b0;
+            border-top: 1px solid #23353e;
+            padding-top: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="series-title">سلسلة الأمين في الفيزياء 2027</div>
+    <h2>حل مسائل الدرس السادس (الشغل والقدرة والكفاءة)</h2>
+
+    <div class="container">
+        <!-- شريط التبويبات للأسئلة التسعة -->
+        <div class="tabs">
+            <button class="tab-btn active" onclick="switchTab(0)">السؤال الأول</button>
+            <button class="tab-btn" onclick="switchTab(1)">السؤال الثاني</button>
+            <button class="tab-btn" onclick="switchTab(2)">السؤال الثالث</button>
+            <button class="tab-btn" onclick="switchTab(3)">السؤال الرابع</button>
+            <button class="tab-btn" onclick="switchTab(4)">السؤال الخامس</button>
+            <button class="tab-btn" onclick="switchTab(5)">السؤال السادس</button>
+            <button class="tab-btn" onclick="switchTab(6)">السؤال السابع</button>
+            <button class="tab-btn" onclick="switchTab(7)">السؤال الثامن</button>
+            <button class="tab-btn" onclick="switchTab(8)">السؤال التاسع</button>
+        </div>
+
+        <!-- السؤال الأول -->
+        <div class="tab-content active">
+            <div class="problem-box">
+                <div class="problem-title">السؤال الأول</div>
+                <div class="problem-statement">يحمل مصعد حمولته إلى أعلى بسرعة ثابتة (v = 2.5 m/s)، ويؤثر المحرك إلى أعلى بقوة (F = 7840 N). احسب القدرة اللازمة لمحرك المصعد (P)؟</div>
+            </div>
+            <div class="solution-box">
+                <div class="solution-title">خطوات الحل النموذجي:</div>
+                <div class="step">1. المعطيات: القوة (F = 7840 N)، والسرعة الثابتة (v = 2.5 m/s).</div>
+                <div class="step">2. القانون المستخدم: القدرة (P = F × v).</div>
+                <div class="step">3. التعويض: P = 7840 × 2.5 = 19600 W.</div>
+                <div class="final-answer">القدرة اللازمة (P) = 19600 W (وتساوي 19.6 kW)</div>
+            </div>
+        </div>
+
+        <!-- السؤال الثاني -->
+        <div class="tab-content">
+            <div class="problem-box">
+                <div class="problem-title">السؤال الثاني</div>
+                <div class="problem-statement">ترتفع مقصورة مصعد كتلتها (m = 400 kg) رأسياً بارتفاع (h = 9.0 m) بسرعة ثابتة خلال زمن (t = 15 s) (بفرض أن عجلة الجاذبية g = 9.8 m/s²). احسب القدرة الناتجة عن محركها بالكيلووات (kW)، ثم تحقق من إجابتك باستخدام العلاقة (P = F × v).</div>
+            </div>
+            <div class="solution-box">
+                <div class="solution-title">خطوات الحل النموذجي:</div>
+                <div class="step">1. حساب الشغل المبذول (W = m × g × h):<br>W = 400 × 9.8 × 9.0 = 35280 J.</div>
+                <div class="step">2. حساب القدرة (P = W / t):<br>P = 35280 / 15 = 2352 W (وتساوي 2.35 kW).</div>
+                <div class="step">3. التحقق باستخدام قانون (P = F × v):<br>• السرعة (v = h / t = 9.0 / 15 = 0.6 m/s).<br>• القوة (F = m × g = 400 × 9.8 = 3920 N).<br>• القدرة (P = F × v = 3920 × 0.6 = 2352 W = 2.35 kW).</div>
+                <div class="final-answer">القدرة الناتجة (P) = 2.35 kW</div>
+            </div>
+        </div>
+
+        <!-- السؤال الثالث -->
+        <div class="tab-content">
+            <div class="problem-box">
+                <div class="problem-title">السؤال الثالث</div>
+                <div class="problem-statement">ترفع رافعة صغيرة حملاً كتلته (m = 600 kg) رأسياً بارتفاع (h = 8.0 m) بسرعة ثابتة خلال زمن (t = 16 s) (بفرض أن g = 9.8 m/s²). احسب الشغل (W) الذي بذلته الرافعة على الحمل والقدرة الميكانيكية (P) الناتجة بالكيلووات (kW)؟</div>
+            </div>
+            <div class="solution-box">
+                <div class="solution-title">خطوات الحل النموذجي:</div>
+                <div class="step">1. حساب الشغل المبذول (W = m × g × h):<br>W = 600 × 9.8 × 8.0 = 47040 J.</div>
+                <div class="step">2. حساب القدرة الميكانيكية (P = W / t):<br>P = 47040 / 16 = 2940 W (وتساوي 2.94 kW).</div>
+                <div class="final-answer">الشغل (W) = 47040 J | القدرة (P) = 2.94 kW</div>
+            </div>
+        </div>
+
+        <!-- السؤال الرابع -->
+        <div class="tab-content">
+            <div class="problem-box">
+                <div class="problem-title">السؤال الرابع</div>
+                <div class="problem-statement">تستقبل سخانة مياه كهربائية صغيرة قدرة كلية (P_in = 2400 W) وتنتج قدرة حرارية مفيدة (P_out = 2040 W) للماء. أوجد الكفاءة (Efficiency).</div>
+            </div>
+            <div class="solution-box">
+                <div class="solution-title">خطوات الحل النموذجي:</div>
+                <div class="step">1. القانون المستخدم: الكفاءة = (P_out / P_in) × 100%.</div>
+                <div class="step">2. التعويض المباشر: الكفاءة = (2040 / 2400) × 100% = 0.85 × 100%.</div>
+                <div class="final-answer">كفاءة السخانة = 85%</div>
+            </div>
+        </div>
+
+        <!-- السؤال الخامس -->
+        <div class="tab-content">
+            <div class="problem-box">
+                <div class="problem-title">السؤال الخامس</div>
+                <div class="problem-statement">يزود مصباح بطاقة كهربائية (E_in = 100 J) ويصدر (E_out = 25 J) من الضوء، ويتبدد الباقي كحرارة.<br>أ- أوجد الطاقة المهدرة (المفقودة) كحرارة وكفاءة المصباح.<br>ب- ارسم مخطط سانكي بسيطاً للمصباح بحيث يمثل سهم الدخل 100 J وينقسم إلى خرج ضوئي مفيد وخرج حراري مفقود.</div>
+            </div>
+            <div class="solution-box">
+                <div class="solution-title">خطوات الحل النموذجي:</div>
+                <div class="step">أ- الطاقة المهدرة كحرارة (E_wasted = E_in - E_out):<br>E_wasted = 100 - 25 = 75 J.<br>• كفاءة المصباح = (E_out / E_in) × 100% = (25 / 100) × 100% = 25%.</div>
+                <div class="step">ب- مخطط سانكي: سهم دخل من اليسار يعبر عن (E_in = 100 J) من الطاقة الكهربائية، يتفرع إلى فرع علوي يمثل الطاقة الضوئية المفيدة (E_out = 25 J)، وفرع سفلي يمثل الطاقة الحرارية المفقودة (E_wasted = 75 J).</div>
+                <div class="final-answer">الطاقة المهدرة = 75 J | كفاءة المصباح = 25%</div>
+            </div>
+        </div>
+
+        <!-- السؤال السادس -->
+        <div class="tab-content">
+            <div class="problem-box">
+                <div class="problem-title">السؤال السادس</div>
+                <div class="problem-statement">يرفع مصعد بضائع حملاً كتلته (m = 1500 kg) رأسياً بارتفاع (h = 18 m) بسرعة ثابتة، مستغرقاً زمن (t = 30 s).<br>أ- احسب الشغل (W) الذي بذله المصعد على الحمل.<br>ب- أوجد القدرة (P) الناتجة عن المصعد بالكيلووات (kW).<br>ج- بين أن السرعة الثابتة (v) للحمل تساوي 0.6 m/s.<br>د- باستخدام قانون (P = F × v)، تحقق من إجابتك في الفقرة (ب)، وفسر بإيجاز لماذا تعطي الطريقتان النتيجة نفسها.</div>
+            </div>
+            <div class="solution-box">
+                <div class="solution-title">خطوات الحل النموذجي:</div>
+                <div class="step">أ- الشغل المبذول (W = m × g × h):<br>W = 1500 × 9.8 × 18 = 264600 J (ويساوي 2.65 × 10 أس 5 J).</div>
+                <div class="step">ب- القدرة الناتجة (P = W / t):<br>P = 264600 / 30 = 8820 W (وتساوي 8.82 kW).</div>
+                <div class="step">ج- السرعة الثابتة (v = h / t):<br>v = 18 / 30 = 0.6 m/s.</div>
+                <div class="step">د- التحقق (P = F × v):<br>• القوة (F = m × g = 1500 × 9.8 = 14700 N).<br>• القدرة (P = 14700 × 0.6 = 8820 W = 8.82 kW).<br>• السبب: لأن القدرة هي معدل بذل الشغل، وبما أن الشغل يعتمد على القوة والإزاحة والسرعة هي معدل التغير في الإزاحة مع الزمن، فالطريقتان وجهان لعملة فيزيائية واحدة.</div>
+                <div class="final-answer">الشغل (W) = 264600 J | القدرة (P) = 8.82 kW</div>
+            </div>
+        </div>
+
+        <!-- السؤال السابع -->
+        <div class="tab-content">
+            <div class="problem-box">
+                <div class="problem-title">السؤال السابع</div>
+                <div class="problem-statement">يرفع كل من المصعدين (A) و(B) حملاً كتلته (m = 600 kg) إلى الارتفاع الرأسي نفسه (h = 9.0 m) بسرعة ثابتة. ينهي المصعد (A) الرفع في زمن (t_A = 24 s) بينما ينهي المصعد (B) الرفع في زمن (t_B = 12 s).<br>أ- فسر لماذا يبذل المصعدان الشغل المفيد نفسه على الحمل، واذكر قيمته.<br>ب- احسب القدرة (P_A) و(P_B) للمصعدين بالكيلووات (kW).<br>ج- اذكر نسبة القدرة (P_A : P_B)، وبين كيف ترتبط بنسبة الأزمنة المستغرقة.</div>
+            </div>
+            <div class="solution-box">
+                <div class="solution-title">خطوات الحل النموذجي:</div>
+                <div class="step">أ- الشغل المبذول متساوٍ لأن الكتلة (m) وارتفاع الرفع (h) وعجلة الجاذبية (g) نفسها للمصعدين.<br>قيمة الشغل (W = 600 × 9.8 × 9.0 = 52920 J).</div>
+                <div class="step">ب- حساب القدرة لكل مصعد (P = W / t):<br>• قدرة المصعد A (P_A = 52920 / 24 = 2205 W = 2.21 kW).<br>• قدرة المصعد B (P_B = 52920 / 12 = 4410 W = 4.41 kW).</div>
+                <div class="step">ج- نسبة القدرة (P_A : P_B = 2205 : 4410 = 1 : 2).<br>الارتباط: القدرة تتناسب عكسياً مع الزمن (t) عند ثبوت الشغل، وبما أن المصعد B استغرق نصف زمن المصعد A، كانت قدرته ضعف قدرة المصعد A.</div>
+                <div class="final-answer">الشغل = 52920 J | P_A = 2.21 kW | P_B = 4.41 kW</div>
+            </div>
+        </div>
+
+        <!-- السؤال الثامن -->
+        <div class="tab-content">
+            <div class="problem-box">
+                <div class="problem-title">السؤال الثامن</div>
+                <div class="problem-statement">يزود ونش كهربائي بطاقة كهربائية (E_in = 50000 J) ويبذل شغلاً مفيداً (E_out = 35000 J) في رفع حمل وتتبدد بقية الطاقة.<br>أ- احسب الطاقة المتبددة (E_wasted) بواسطة الونش.<br>ب- أوجد الكفاءة (Efficiency) للونش معبراً عنها كنسبة مئوية.<br>ج- ارسم مخطط سانكي لانتقال الطاقة بحيث يتناسب عرض الأسهم مع مقدار الطاقة.<br>د- اذكر الصورة الرئيسية للطاقة التي تحول إليها الطاقة المتبددة.</div>
+            </div>
+            <div class="solution-box">
+                <div class="solution-title">خطوات الحل النموذجي:</div>
+                <div class="step">أ- الطاقة المتبددة (E_wasted = E_in - E_out):<br>E_wasted = 50000 - 35000 = 15000 J.</div>
+                <div class="step">ب- الكفاءة = (E_out / E_in) × 100% = (35000 / 50000) × 100% = 70%.</div>
+                <div class="step">ج- مخطط سانكي: سهم دخل كهربائي (E_in = 50000 J)، يتفرع إلى فرع علوي مفيد (E_out = 35000 J)، وفرع سفلي مفقود (E_wasted = 15000 J).</div>
+                <div class="step">د- الصورة الرئيسية للطاقة المتبددة: طاقة حرارية (Thermal Energy) تنتشر في محرك الونش والوسط المحيط.</div>
+                <div class="final-answer">الطاقة المتبددة = 15000 J | كفاءة الونش = 70%</div>
+            </div>
+        </div>
+
+        <!-- السؤال التاسع -->
+        <div class="tab-content">
+            <div class="problem-box">
+                <div class="problem-title">السؤال التاسع</div>
+                <div class="problem-statement">ترفع رافعة كهربائية حملاً كتلته (m = 250 kg) بارتفاع رأسي (h = 6.0 m) بسرعة ثابتة خلال زمن (t = 8.0 s). وأثناء ذلك، تزود الرافعة بطاقة بمعدل ثابت (P_in = 2.5 kW).<br>أ- احسب القدرة المفيدة (P_out) الناتجة عن الرافعة بالكيلووات (kW).<br>ب- أوجد كفاءة الونش معبراً عنها كنسبة مئوية.</div>
+            </div>
+            <div class="solution-box">
+                <div class="solution-title">خطوات الحل النموذجي:</div>
+                <div class="step">1. حساب الشغل المفيد المبذول (W = m × g × h):<br>W = 250 × 9.8 × 6.0 = 14700 J.</div>
+                <div class="step">2. حساب القدرة المفيدة (P_out = W / t):<br>P_out = 14700 / 8.0 = 1837.5 W (وتساوي 1.84 kW).</div>
+                <div class="step">3. حساب الكفاءة (P_out / P_in):<br>القدرة الكلية (P_in = 2.5 kW = 2500 W).<br>الكفاءة = (1837.5 / 2500) × 100% = 73.5%.</div>
+                <div class="final-answer">القدرة المفيدة (P_out) = 1.84 kW | كفاءة الرافعة = 73.5%</div>
+            </div>
+        </div>
+
+        <!-- حقوق النشر -->
+        <div class="footer-rights">
+            جميع الحقوق محفوظة © أ/محمد أمين نظير 2027
+        </div>
+    </div>
+
+    <script>
+        function switchTab(index) {
+            const buttons = document.querySelectorAll('.tab-btn');
+            const contents = document.querySelectorAll('.tab-content');
+            
+            buttons.forEach((btn, i) => {
+                if (i === index) {
+                    btn.classList.add('active');
+                    contents[i].classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                    contents[i].classList.remove('active');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
